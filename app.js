@@ -36,6 +36,18 @@ const renderPokemon = () => {
         pokeStat.append(`${x.stat.name}: ${x.base_stat}`);
         statsDiv.append(pokeStat);
       });
+
+      fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokeMon}`)
+        .then((res) => res.json())
+        .then((data) => {
+          const info = document.querySelector("#pokeInfo");
+          console.log(data);
+
+          info.textContent = data.flavor_text_entries[0].flavor_text.replace(
+            "\u000c",
+            "\n"
+          );
+        });
     });
 };
 

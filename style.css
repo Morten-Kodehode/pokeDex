@@ -36,6 +36,10 @@ body {
   padding: 5px;
 }
 
+#pokeInfo {
+  margin: 25px;
+}
+
 .btnDiv {
   width: 75%;
   display: flex;
