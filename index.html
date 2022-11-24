@@ -10,15 +10,18 @@
   </head>
   <body>
     <div id="pokedex">
-      <h1 id="pokeName"></h1>
-      <img id="pokeImg" height="250px" />
-      <h3>Stats:</h3>
-      <div id="pokeStats"></div>
+      <div id="pokeCardTop">
+        <h1 id="pokeName"></h1>
+        <!-- <div id="pokeTypes"></div> -->
+        <h3 id="pokeHP"></h3>
+      </div>
+      <img id="pokeImg" />
+      <div id="pokeTypeInfo">
+        <p id="pokeType"></p>
+      </div>
       <p id="pokeInfo"></p>
       <div class="btnDiv">
-        <button id="btnPrev" onclick="btnPrev()">Prev</button>
-        <button id="btnRandom" onclick="btnRandom()">Random</button>
-        <button id="btnNext" onclick="btnNext()">Next</button>
+        <button id="btnRandom" onclick="btnRandom()">Draw New Card</button>
       </div>
     </div>
   </body>
