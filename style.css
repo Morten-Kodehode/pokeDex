@@ -1,3 +1,4 @@
+/* Reset */
 *,
 *::after,
 *::before {
@@ -18,6 +19,7 @@ body {
     center/cover;
 }
 
+/* Card */
 #pokedex {
   display: flex;
   flex-direction: column;
